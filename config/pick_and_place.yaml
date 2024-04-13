@@ -1,0 +1,41 @@
+---
+nav_to_pick_start:
+  position:
+    x: 1.0072976872210022
+    y: -0.20112499827001082
+    z: 0.0
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: -0.14306164386971082
+    w: 0.9897137798643081
+nav_to_pick_end:
+  position:
+    x: 2.9444787991326766
+    y: 0.9979363251386588
+    z: 0.0
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: -0.9964278861319793
+    w: 0.08444801796700294
+nav_to_place_end:
+  position:
+    x: 4.772485287812544
+    y: 1.0499402388626504
+    z: 0.0
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: 0.04105345259914562
+    w: 0.9991569516495843
+detect_to_pick_name: 'pick'
+detect_to_place_name: 'drop'
+pick_marker_point:
+  x: -0.0185
+  y: -0.0155
+  z: -0.0241
+place_marker_point:
+  x: 0.001
+  y: 0.001
+  z: 0.05
