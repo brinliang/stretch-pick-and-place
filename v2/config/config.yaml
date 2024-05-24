@@ -1,0 +1,102 @@
+---
+nav_initial:
+  position:
+    x: 0.8201473205447891
+    y: 0.3293175008114472
+    z: 0.0
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: 0.999950179431183
+    w: 0.00998191642646521
+
+nav_pick:
+  position:
+    x: -0.4489500400538177
+    y: -0.16839686262824508
+    z: 0.0
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: -0.2028735790257787
+    w: 0.9792049381683444
+
+nav_place:
+  position:
+    x: -1.9945786404162065
+    y: -5.742132685533616
+    z: 0.0
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: 0.09890988979333987
+    w: 0.9950963941754936
+
+
+manipulation_pick:
+  pre_ik_motion:
+    - joint_gripper_finger_left: 0.6
+    - joint_wrist_yaw: 0.0
+    - joint_wrist_pitch: 0.0
+    - joint_wrist_roll: 0.0
+    - wrist_extension: 0.01
+  ik_joint_names:
+    - translate_mobile_base
+    - joint_lift
+    - wrist_extension
+  object_to_gripper:
+    x: -0.05
+    y: 0.0
+    z: 0.03
+  post_ik_motion:
+    - joint: translate_mobile_base
+      value: 0.0
+      mode: relative_to_object
+    - joint: joint_lift
+      value: 0.0
+      mode: relative_to_object
+    - joint: wrist_extension
+      value: 0.07
+      mode: relative_to_object
+    - joint: joint_gripper_finger_left
+      value: -0.05
+      mode: absolute
+    - joint: joint_lift
+      value: 0.05
+      mode: relative_to_object
+    - joint: wrist_extension
+      value: 0.01
+      mode: absolute
+
+manipulation_place:
+  pre_ik_motion: 
+    - joint_wrist_yaw: 0.0
+    - joint_wrist_pitch: 0.0
+    - joint_wrist_roll: 0.0
+  ik_joint_names:
+    - translate_mobile_base
+    - joint_lift
+    - wrist_extension
+  object_to_gripper:
+    x: -0.15331021296565442
+    y: 0.3448438524542913
+    z: 0.10051977109512036
+  post_ik_motion:
+    - joint: translate_mobile_base
+      value: 0.0
+      mode: relative_to_object
+    - joint: joint_lift
+      value: 0.0
+      mode: relative_to_object
+    - joint: wrist_extension
+      value: 0.0
+      mode: relative_to_object
+    - joint: joint_gripper_finger_left
+      value: 0.4
+      mode: absolute
+    - joint: joint_lift
+      value: 0.05
+      mode: relative_to_object
+    - joint: wrist_extension
+      value: 0.05
+      mode: absolute
